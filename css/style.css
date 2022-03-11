@@ -5,6 +5,7 @@
 
 
 :root {
+    --bg-opacuty: rgba(255, 255, 255, 0.5);
     --black-900: #000000;
     --m-black-100: #dddddd;
     --l-black-50: #eff0f4;
@@ -16,6 +17,20 @@
     --outer-shadow-0:  0 0 0 #d0d0d0, 0 0 0 #f8f8f8;
     --inner-shadow-0: inset 0 0 0 #d0d0d0, inset 0 0 0 #f8f8f8;
 
+}
+
+body.dark {
+    --black-900: #ffffff;
+    --m-black-100: #353535;
+    --l-black-50: #2b2c2f;
+    --bg-opacuty: rgba(43, 44, 47, 0.5);
+    --t-black-700: #ffffff;
+    --t-black-600: #ffffff;
+    --t-black-300: #bbbbbb;
+    --outer-shadow: 3px 3px 3px #222327, -3px -3px 3px #363636;
+    --inner-shadow: inset 3px 3px 3px #222327, inset -3px -3px 3px #363636;
+    --outer-shadow-0:  0 0 0 #222327, 0 0 0 #363636;
+    --inner-shadow-0: inset 0 0 0 #222327, inset 0 0 0 #363636;
 }
 
 *:not(i) {
@@ -431,7 +446,7 @@ header .hamburger-btn span::after {
     display: inline-block;
     font-size: 28px;
     font-weight: 600;
-    color: var(--t-black-700);
+    color: var(--t-black-600);
     padding: 5px 30px;
     border-radius: 30px;
     transition: all 0.3s ease;
@@ -508,7 +523,7 @@ header .hamburger-btn span::after {
 .home-section .h-text h1 {
     font-size: 35px;
     font-weight: 500;
-    color: var(--t-black-700);
+    color: var(--t-black-600);
     margin: 0;
     text-transform: capitalize;
 }
@@ -837,6 +852,7 @@ header .hamburger-btn span::after {
     transition: all 0.3s ease;
     margin: 0 auto 30px;
     position: relative;
+    color: var(--t-black-600);
 }
 
 .service-section .service-item-inner .icon::after {
