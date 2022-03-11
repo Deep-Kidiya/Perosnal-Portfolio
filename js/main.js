@@ -189,12 +189,11 @@
 
 })();
 
-
-
-
-
-
-
-
+window.addEventListener("load", () => {
+    document.querySelector(".preloader").classList.add("fade-out");
+    setTimeout(() => {
+        document.querySelector(".preloder").style.display="none";
+    },600)
+})
 
 // =============== hide end
