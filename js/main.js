@@ -92,13 +92,7 @@
 
          event.target.classList.add("active","outer-shadow");
 
-         document.querySelector(".tab-content.active").classList.remove("active");
 
-         document.querySelector(target).classList.add("active");
-
-    
-         
-        
         }
     })
 })();
@@ -197,3 +191,30 @@ window.addEventListener("load", () => {
 })
 
 // =============== hide end
+
+function myFunction() {
+    var element = document.querySelector(".skill");
+    var element2 = document.querySelector(".experence");
+    var element3 = document.querySelector(".education");
+    element.classList.add("active");
+    element2.classList.remove("active");
+    element3.classList.remove("active");
+ }
+
+ function myFunction2() {
+    var element = document.querySelector(".skill");
+    var element2 = document.querySelector(".experence");
+    var element3 = document.querySelector(".education");
+    element2.classList.add("active");
+    element.classList.remove("active");
+    element3.classList.remove("active");
+ }
+
+ function myFunction3() {
+    var element = document.querySelector(".skill");
+    var element2 = document.querySelector(".experence");
+    var element3 = document.querySelector(".education");
+    element3.classList.add("active");
+    element2.classList.remove("active");
+    element.classList.remove("active");
+ }
